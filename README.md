@@ -1,6 +1,6 @@
 # Daily Quotes
 
-This project supplies users with a different quote each day. <br>
+This project supplies users with a different quote each day. <br><br>
 Quotes found from: <br>
 https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373 <br><br>
 Random number with seed found here: <br>
