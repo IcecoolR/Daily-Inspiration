@@ -1,0 +1,81 @@
+/* Mobile and Global Styles */
+/* Applies to screens smaller than 500px and above unless overwritten below */
+
+a, h1, h2, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  background-color: #ab6a51;
+}
+
+#container {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -20%);
+  padding: 4rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+h2 {
+  text-align: right;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+a {
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Tablet Styles */
+
+@media screen and (min-width: 500px) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+
+}
+
+/* Desktop Styles */
+
+@media screen and (min-width: 1000px) {
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  a {
+    font-size: 2rem;
+  }
+
+}
