@@ -6,4 +6,4 @@ Quotes found from: https://forum.freecodecamp.org/t/free-api-inspirational-quote
 
 Random number with seed found here: https://dev.to/xtrp/random-seed-in-javascript-and-node-js-5gf4 
 
-Check it out live on [GitHub Pages](https://icecoolr.github.io/Daily-Quotes/)!
+Check it out live on [GitHub Pages](https://icecoolr.github.io/Daily-Inspiration/)!
