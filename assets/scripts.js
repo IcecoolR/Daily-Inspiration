@@ -24,7 +24,7 @@ fetch("https://type.fit/api/quotes")
 
     } else {
 
-      author.innerHTML = "- " + quoteObject.author;
+      author.innerHTML = "- " + quoteObject.author.toString().split(",")[0];
 
     }
 
