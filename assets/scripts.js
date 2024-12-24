@@ -3,7 +3,7 @@
 const quote = document.getElementById("quote");
 const author = document.getElementById("author");
 
-fetch("https://api.quotable.io/quotes?tags=Famous Quotes|Competition")  // https://github.com/lukePeavey/quotable
+fetch("https://api.quotable.io/quotes?tags=Famous Quotes|Competition")
   .then(function(response) {
     return response.json();
   })
