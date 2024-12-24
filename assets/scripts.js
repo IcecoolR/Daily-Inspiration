@@ -3,7 +3,7 @@
 const quote = document.getElementById("quote");
 const author = document.getElementById("author");
 
-fetch("https://type.fit/api/quotes")
+fetch("https://api.quotable.io/quotes?tags=Famous Quotes|Competition")  // https://github.com/lukePeavey/quotable
   .then(function(response) {
     return response.json();
   })
@@ -14,9 +14,11 @@ fetch("https://type.fit/api/quotes")
     const generator = new Math.seedrandom('' + today.getUTCDate() + today.getUTCMonth() + today.getUTCFullYear() );
     const randomNumber = generator();
 
-    const quoteObject = data[ Math.trunc( randomNumber * (data.length + 1) ) ];
+    const quoteObject = data.results[ Math.trunc( randomNumber * (data.results.length + 1) ) ];
 
-    quote.innerHTML = "\"" + quoteObject.text + "\"";
+    console.log(quoteObject);
+
+    quote.innerHTML = "\"" + quoteObject.content + "\"";
 
     if (quoteObject.author == null) {
 
