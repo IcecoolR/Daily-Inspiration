@@ -1,6 +1,6 @@
 # Daily Inspiration
 
-This project supplies users with a different quote each day and was created to mess around with APIs.
+This project supplies users with a different quote each day. I created it to mess around with APIs and random number generation.
 
 Quotes found from: https://github.com/lukePeavey/quotable
 

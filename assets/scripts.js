@@ -16,8 +16,6 @@ fetch("https://api.quotable.io/quotes?tags=Famous Quotes|Competition")
 
     const quoteObject = data.results[ Math.trunc( randomNumber * (data.results.length + 1) ) ];
 
-    console.log(quoteObject);
-
     quote.innerHTML = "\"" + quoteObject.content + "\"";
 
     if (quoteObject.author == null) {
