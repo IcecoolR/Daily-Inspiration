@@ -11,9 +11,10 @@ a, h1, h2, body {
 
 body {
   background-color: #E7D87B;
+  animation: fadeIn 3s ease-in forwards;
 }
 
-#container {
+section {
   position: fixed;
   top: 20%;
   left: 50%;
@@ -23,6 +24,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 h1 {

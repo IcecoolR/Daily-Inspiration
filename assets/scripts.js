@@ -8,6 +8,9 @@ fetch("https://api.quotable.io/quotes?tags=Famous Quotes|Competition")
     return response.json();
   })
   .then(function(data) {
+    if (!data.results || data.results.length === 0) {
+      return;
+    }
 
     const today = new Date();
 
@@ -16,15 +19,15 @@ fetch("https://api.quotable.io/quotes?tags=Famous Quotes|Competition")
 
     const quoteObject = data.results[ Math.trunc( randomNumber * (data.results.length) ) ];
 
-    quote.innerHTML = "\"" + quoteObject.content + "\"";
+    quote.textContent = "\"" + quoteObject.content + "\"";
 
     if (quoteObject.author == null) {
 
-      author.innerHTML = "- (Unknown author)";
+      author.textContent = "- (Unknown author)";
 
     } else {
 
-      author.innerHTML = "- " + quoteObject.author.toString().split(",")[0];
+      author.textContent = "- " + quoteObject.author.toString().split(",")[0];
 
     }
 
