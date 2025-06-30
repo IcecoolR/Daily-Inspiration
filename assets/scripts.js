@@ -14,13 +14,13 @@ fetch("https://api.quotable.io/quotes?tags=Famous Quotes|Competition")
     const generator = new Math.seedrandom('' + today.getUTCDate() + today.getUTCMonth() + today.getUTCFullYear() );
     const randomNumber = generator();
 
-    const quoteObject = data.results[ Math.trunc( randomNumber * (data.results.length + 1) ) ];
+    const quoteObject = data.results[ Math.trunc( randomNumber * (data.results.length) ) ];
 
     quote.innerHTML = "\"" + quoteObject.content + "\"";
 
     if (quoteObject.author == null) {
 
-      author.innerHTML = "- (Unknown author)"
+      author.innerHTML = "- (Unknown author)";
 
     } else {
 
